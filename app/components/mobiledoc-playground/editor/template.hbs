@@ -1,14 +1,23 @@
-{{#mobiledoc-editor
-  mobiledoc=mobiledoc
-  on-change=onMobiledocUpdated
-  as |editor|}}
-
+{{#mobiledoc-editor mobiledoc=mobiledoc on-change=onMobiledocUpdated as |editor|
+}}
   <div local-class="editor-toolbar">
     {{#mobiledoc-section-button editor=editor for="h1"}}
-      Heading
+      h1
     {{/mobiledoc-section-button}}
     {{#mobiledoc-section-button editor=editor for="h2"}}
-      Subheading
+      h2
+    {{/mobiledoc-section-button}}
+    {{#mobiledoc-section-button editor=editor for="h3"}}
+      h3
+    {{/mobiledoc-section-button}}
+    {{#mobiledoc-section-button editor=editor for="h4"}}
+      h4
+    {{/mobiledoc-section-button}}
+    {{#mobiledoc-section-button editor=editor for="h5"}}
+      h5
+    {{/mobiledoc-section-button}}
+    {{#mobiledoc-section-button editor=editor for="h6"}}
+      h6
     {{/mobiledoc-section-button}}
     {{#mobiledoc-section-button editor=editor for="blockquote"}}
       Blockquote
@@ -20,5 +29,4 @@
       Ordered List
     {{/mobiledoc-section-button}}
   </div>
-
 {{/mobiledoc-editor}}
